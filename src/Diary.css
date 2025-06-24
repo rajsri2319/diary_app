@@ -1,0 +1,118 @@
+/* Diary.css - Comprehensive styles for Diary and Home components */
+
+/* General diary container styles */
+.diary-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Home button styles */
+.home-button-container {
+  margin-bottom: 20px;
+}
+
+.home-button-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.home-button-container button:hover {
+  background-color: #367c39;
+}
+
+/* Notification styles */
+.notification {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+}
+
+/* Logout container styles */
+.logout-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logout-container button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-container button:hover {
+  background-color: #da190b;
+}
+
+/* Entries page styles */
+.entries-page {
+  padding: 20px;
+}
+
+.entries-visualization {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.entry-rectangle {
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+/* Home component styles (widgets) */
+.diary-home {
+  padding: 20px;
+}
+
+.diary-widgets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.widget {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.widget h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.widget input[type="text"],
+.widget textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.widget button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.widget button:hover {
+  background-color: #0056b3;
+}

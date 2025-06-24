@@ -1,0 +1,33 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.App-header {
+  background-color: rgba(
+    220,
+    220,
+    220,
+    0.8
+  ); /* Background color for the upper portion */
+  background-image: url("image2.png");
+  background-size: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  padding: 20px;
+  color: #9999;
+  position: relative; /* Required for image positioning */
+  height: 200px; /* Adjust height as needed */
+}
+
+nav a {
+  margin: 0 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
