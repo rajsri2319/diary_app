@@ -15,15 +15,17 @@ function Register() {
       setError("Please fill in all fields.");
       return;
     }
+
     const storedUsers = JSON.parse(localStorage.getItem("users") || "[]");
     if (storedUsers.find((user) => user.username === username)) {
       setError("Username already exists.");
       return;
     }
+
     const newUser = { username, password };
     localStorage.setItem("users", JSON.stringify([...storedUsers, newUser]));
     setError("");
-    navigate("/login");
+    navigate("/login"); // Redirect to login after successful registration
   };
 
   return (
