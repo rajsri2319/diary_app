@@ -1,35 +1,37 @@
-// Login.js
-import React, { useState } from "react";
+// src/Login.js
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
-const Login = () => {
+const Login = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
+  // Check if user is already logged in
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      setIsLoggedIn(true);
+      navigate("/diary"); // Redirect to diary if already logged in
+    }
+  }, [navigate, setIsLoggedIn]);
+
+  const handleLogin = (e) => {
     e.preventDefault();
+    const storedUsers = JSON.parse(localStorage.getItem("users") || "[]");
+    const user = storedUsers.find(
+      (user) => user.username === email && user.password === password
+    );
 
-    try {
-      const response = await fetch("http://localhost:3001/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        localStorage.setItem("token", data.token);
-        navigate("/diary");
-      } else {
-        alert("Invalid credentials");
-      }
-    } catch (error) {
-      console.error("Login failed:", error);
-      alert("Login failed");
+    if (user) {
+      const token = "your_jwt_token_here"; // Simulate token generation
+      localStorage.setItem("token", token);
+      setIsLoggedIn(true);
+      navigate("/diary");
+    } else {
+      setError("Invalid credentials");
     }
   };
 
@@ -39,12 +41,9 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      {/* Upper Portion - Grey Area */}
       <div className="login-upper-portion">
         <h2>Welcome Here</h2>
       </div>
-
-      {/* Login Form Widget */}
       <div className="login-form">
         <h2>Login</h2>
         <form onSubmit={handleLogin}>
@@ -71,11 +70,11 @@ const Login = () => {
           <button type="submit" className="login-button">
             Login
           </button>
+          {error && <p className="error-message">{error}</p>}
         </form>
       </div>
-
       <div className="register-link">
-        Don't have an account? <a onClick={goToRegister}>Register</a>
+        Don't have an account? <button onClick={goToRegister}>Register</button>
       </div>
     </div>
   );
