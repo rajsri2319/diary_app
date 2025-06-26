@@ -1,4 +1,4 @@
-// Home.js
+// src/Home.js
 import React from "react";
 import "./Diary.css"; // Import the combined Diary.css
 
@@ -18,7 +18,6 @@ const Home = ({ addEntry, handleInputChange, newEntry }) => {
               required
             />
             <textarea
-              type="text"
               name="content"
               placeholder="Content"
               value={newEntry.content}
