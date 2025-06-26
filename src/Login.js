@@ -21,9 +21,7 @@ const Login = ({ setIsLoggedIn }) => {
   const handleLogin = (e) => {
     e.preventDefault();
     const storedUsers = JSON.parse(localStorage.getItem("users") || "[]");
-    const user = storedUsers.find(
-      (user) => user.username === email && user.password === password
-    );
+    const user = storedUsers.find(user => user.username === email && user.password === password);
 
     if (user) {
       const token = "your_jwt_token_here"; // Simulate token generation
@@ -67,10 +65,8 @@ const Login = ({ setIsLoggedIn }) => {
               required
             />
           </div>
-          <button type="submit" className="login-button">
-            Login
-          </button>
-          {error && <p className="error-message">{error}</p>}
+          <button type="submit" className="login-button">Login</button>
+          {error && <p className="error-message" style={{ color: "white" }}>{error}</p>}
         </form>
       </div>
       <div className="register-link">
