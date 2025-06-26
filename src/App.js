@@ -1,5 +1,4 @@
 // src/App.js
-
 import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -17,11 +16,7 @@ function App() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    if (token) {
-      setIsLoggedIn(true);
-    } else {
-      setIsLoggedIn(false);
-    }
+    setIsLoggedIn(!!token); // Set logged in state based on token presence
   }, []);
 
   return (
