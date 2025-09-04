@@ -26,12 +26,14 @@ This is the backend service for the Diary App, built with Flask. It provides RES
    ```
    python -m venv venv
    source venv/bin/activate  # Windows: venv\Scripts\activate
+
    
 ### 2. Install dependencies:
 
    ```
    pip install -r requirements.txt the application:
    python app.py
+
 
 ### 3. API Endpoints:
 
