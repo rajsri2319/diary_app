@@ -33,9 +33,8 @@ Copy code
    cd backend
 Create and activate a virtual environment:
 
-```bash
-
-Run
+   ```bash
+  Run
 Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
