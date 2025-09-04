@@ -33,7 +33,7 @@ Copy code
    cd backend
 Create and activate a virtual environment:
 
-bash
+```bash
 
 Run
 Copy code
