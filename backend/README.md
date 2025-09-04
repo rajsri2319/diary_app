@@ -33,21 +33,16 @@ python app.py
 
 3. API Endpoints:
 
-POST /api/register - Register a new user.
-
-POST /api/login - Authenticate user and receive JWT token.
-
-POST /api/entries - Add a new diary entry.
-
-GET /api/entries - Retrieve all diary entries for the authenticated user.
-
-DELETE /api/entries/<entry_id> - Delete a specific diary entry.
+- POST /api/register - Register a new user.
+- POST /api/login - Authenticate user and receive JWT token.
+- POST /api/entries - Add a new diary entry.
+- GET /api/entries - Retrieve all diary entries for the authenticated user.
+- DELETE /api/entries/<entry_id> - Delete a specific diary entry.
 
 5. Notes:
 
-Ensure the backend is ning before starting the frontend.
-
-Configure environment variables or config files as needed for secret keys.
+- Ensure the backend is ning before starting the frontend.
+- Configure environment variables or config files as needed for secret keys.
 
 
 
