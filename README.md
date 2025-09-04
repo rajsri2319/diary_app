@@ -61,18 +61,16 @@ Open your browser and go to:
 http://localhost:3000
 
 #### Usage:
-Register a new user account
-Log in with your credentials
-Add, view, and delete diary entries
-Log out when finished
+
+- Register a new user account
+- Log in with your credentials
+- Add, view, and delete diary entries
+- Log out when finished
 
 #### API Endpoints
-POST /api/register — Register a new user
 
-POST /api/login — Log in and receive a JWT token
-
-POST /api/entries — Add a new diary entry
-
-GET /api/entries — Retrieve all diary entries for the logged-in user
-
-DELETE /api/entries/<entry_id> — Delete a diary entry by ID
+- POST /api/register — Register a new user
+- POST /api/login — Log in and receive a JWT token
+- POST /api/entries — Add a new diary entry
+- GET /api/entries — Retrieve all diary entries for the logged-in user
+- DELETE /api/entries/<entry_id> — Delete a diary entry by ID
