@@ -30,30 +30,20 @@ Run
 1. Navigate to the **backend** directory:
    ```
    cd backend
+   
 Create and activate a virtual environment:
-
-
-
 python -m venv venv
+
 On Linux/Mac:
-
-
-
 source venv/bin/activate
+
 On Windows:
-
-
-
 venv\Scripts\activate
+
 Install backend dependencies:
-
-
-
 pip install -r requirements.txt
+
 Run the backend server:
-
-
-
 python app.py
 
 ### Frontend Setup
