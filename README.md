@@ -34,7 +34,7 @@ Copy code
 Create and activate a virtual environment:
 
    ```bash
-  Run
+   Run
 Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
