@@ -76,20 +76,3 @@ POST /api/entries — Add a new diary entry
 GET /api/entries — Retrieve all diary entries for the logged-in user
 
 DELETE /api/entries/<entry_id> — Delete a diary entry by ID
-
-#### Contributing
-Contributions are welcome! 🎉 Please follow these steps:
-
-Fork the repository
-
-Create a new branch
-
-git checkout -b feature/YourFeature
-
-Commit your changes
-
-git commit -m "Add some feature"
-
-Push to the branch
-
-git push origin feature/YourFeature
