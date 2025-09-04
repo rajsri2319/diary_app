@@ -23,37 +23,25 @@ This is the backend service for the Diary App, built with Flask. It provides RES
 
 1. Create and activate a virtual environment:
 
-   ```bash
+   ```
    python -m venv venv
    source venv/bin/activate  # Windows: venv\Scripts\activate
-Install dependencies:
-
-bash
-
-Run
-Copy code
-pip install -r requirements.txt
-Run the application:
-
-bash
-
-Run
-Copy code
+   
+2. Install dependencies:
+pip install -r requirements.txt the application:
 python app.py
-API Endpoints
+
+3. API Endpoints:
 POST /api/register - Register a new user.
 POST /api/login - Authenticate user and receive JWT token.
 POST /api/entries - Add a new diary entry.
 GET /api/entries - Retrieve all diary entries for the authenticated user.
 DELETE /api/entries/<entry_id> - Delete a specific diary entry.
-Notes
-Ensure the backend is running before starting the frontend.
+
+4. Notes:
+Ensure the backend is ning before starting the frontend.
 Configure environment variables or config files as needed for secret keys.
-License
-MIT License
 
 
-Run
-Copy code
 
 ---
