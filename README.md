@@ -53,42 +53,50 @@ bash
 Run
 Copy code
 python app.py
-Frontend Setup
-Navigate to the frontend directory:
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
 
 bash
 
 Run
 Copy code
 cd frontend
-Install frontend dependencies:
+
+2. Install frontend dependencies:
 
 bash
 
 Run
 Copy code
 npm install
-Start the frontend development server:
+
+3. Start the frontend development server:
 
 bash
 
 Run
 Copy code
 npm start
-Open your browser and go to http://localhost:3000.
 
-Usage
+4. Open your browser and go to http://localhost:3000.
+
+### Usage
+
 Register a new user account.
 Log in with your credentials.
 Add, view, and delete diary entries.
 Log out when finished.
-API Endpoints
+
+### API Endpoints
 POST /api/register — Register a new user.
 POST /api/login — Log in and receive a JWT token.
 POST /api/entries — Add a new diary entry.
 GET /api/entries — Retrieve all diary entries for the logged-in user.
 DELETE /api/entries/<entry_id> — Delete a diary entry by ID.
-Contributing
+
+### Contributing
 Contributions are welcome! Please follow these steps:
 
 Fork the repository.
