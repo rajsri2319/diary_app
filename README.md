@@ -5,11 +5,7 @@
 Diary App is a full-stack web application that allows users to maintain a personal journal. The frontend is built with **React**, providing a responsive and user-friendly interface, while the backend is powered by **Flask**, offering secure RESTful APIs for user authentication and diary management.
 
 ## Repository Structure
-diary-app/ ├── backend/ # Flask backend API ├── frontend/ # React frontend application ├── .gitignore └── README.md # This file
-
-
-Run
-
+diary-app/ ├── backend/ # Flask backend API ├── frontend/ # React frontend application ├── .gitignore └── README.md
 
 ## Features
 
